@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+/* Color pallet */
+$primary-lilac: #c5c1d8;
+$medium-lilac: #e2e0eb;
+$light-lilac: #ebeaf0;
+
+$menu-selection: #e1dfea;
+
+$dark-gray: #4a4b46;
+$medium-gray: #8f8f8f;
+$light-gray: #9d9ca2;
+
+/* Fonts definition */
+$main-font: Verdana, Helvetica, sans-serif;
+$bold-amount: 800;
+$font-size-sm: 14px;
+$font-size: 16px;
+$font-size-md: 18px;
+$font-size-lg: 20px;
+$font-size-xl: 22px;
+
+.bold-text {
+  font-weight: $bold-amount;
+}
+.sm-text{
+  font-size: $font-size-sm;
+  font-weight: normal;
+}
+.md-text {
+  font-size: $font-size-md;
+  font-weight: normal;
+}
+.lg-text{
+  font-size: $font-size-lg;
+}
+.xl-text{
+  font-size: $font-size-xl;
+}
+
+/* Global reset */
+body{
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+  font-size: $font-size;
+  font-weight: normal;
+}

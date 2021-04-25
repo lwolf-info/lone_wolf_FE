@@ -1,0 +1,28 @@
+@import '../../../styles';
+::ng-deep{
+  .mat-tab-header {
+    .mat-tab-list {
+      height: 120px;
+      background: $primary-lilac;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .mat-tab-label-content {
+        text-transform: capitalize;
+        user-select: none;
+      }
+      .mat-tab-label-active {
+        font-weight: $bold-amount;
+      }
+    }
+    .mat-ink-bar {
+      bottom: 30%;
+      height: 50px;
+      max-width: 50px;
+      margin-left: 3.9%;
+      z-index: -1;
+      background-color: $menu-selection;
+      border-radius: 200px;
+    }
+  }
+}
