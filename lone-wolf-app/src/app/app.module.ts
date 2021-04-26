@@ -11,25 +11,45 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 import { AboutComponent } from './components/sections/about/about.component';
 import { ClassesComponent } from './components/sections/classes/classes.component';
+import { PricingComponent } from './components/sections/pricing/pricing.component';
+import { ServicesComponent } from './components/sections/services/services.component';
+import { ScheduleComponent } from './components/sections/schedule/schedule.component';
+import { ContactComponent } from './components/sections/contact/contact.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { TestComponent } from './components/test/test.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     AboutComponent,
-    ClassesComponent
+    ClassesComponent,
+    PricingComponent,
+    ServicesComponent,
+    ScheduleComponent,
+    ContactComponent,
+    TestComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   bootstrap: [
     AppComponent,
     NavigationComponent,
     AboutComponent,
-    ClassesComponent
+    ClassesComponent,
+    PricingComponent,
+    ServicesComponent,
+    ScheduleComponent,
+    ContactComponent,
+    TestComponent,
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
