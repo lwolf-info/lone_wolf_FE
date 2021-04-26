@@ -13,8 +13,7 @@ export class TestComponent implements OnInit {
   public posts: IPost[] | undefined;
   public baseURL = BASE_URL;
 
-  constructor(private api: ApiService) {
-  }
+  constructor(private api: ApiService) {}
 
   ngOnInit(): void {
     // getting posts
