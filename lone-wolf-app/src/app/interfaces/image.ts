@@ -1,3 +1,11 @@
+interface IImageFormat {
+  name: string;
+  url: string;
+  width: number;
+  height: number;
+  mime: string;
+}
+
 export interface IImage {
   name: string;
   url: string;
@@ -6,11 +14,10 @@ export interface IImage {
   width: number;
   height: number;
   formats: {
-    thumbnail: {
-      name: string;
-      url: string;
-      width: number;
-      height: number;
-    }
+    thumbnail: IImageFormat;
+    large: IImageFormat;
+    medium: IImageFormat;
+    small: IImageFormat;
+    xsmall: IImage;
   };
 }

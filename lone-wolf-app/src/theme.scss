@@ -1,0 +1,50 @@
+@import '~@angular/material/theming';
+$main-color: #c5c1d8;
+
+$app-color: (
+  50:   $main-color,
+  100:  $main-color,
+  200:  $main-color,
+  300:  $main-color,
+  400:  $main-color,
+  500:  lighten($main-color, 10), // nav accent | bullets
+  600:  $main-color,
+  700:  $main-color,
+  800:  $main-color,
+  900:  $main-color,
+  A100: $main-color,
+  A200: darken($main-color, 10), // spinner
+  A400: $main-color,
+  A700: $main-color,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+$candy-app-primary: mat-palette($app-color);
+$candy-app-accent:  mat-palette($app-color, A200, A100, A400);
+
+$candy-app-warn:    mat-palette($mat-red);
+
+$candy-app-theme: mat-light-theme((
+  color: (
+    primary: $candy-app-primary,
+    accent: $candy-app-accent,
+    warn: $candy-app-warn,
+  )
+));
+
+@include angular-material-theme($candy-app-theme);

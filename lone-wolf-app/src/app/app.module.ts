@@ -17,8 +17,9 @@ import { ServicesComponent } from './components/sections/services/services.compo
 import { ScheduleComponent } from './components/sections/schedule/schedule.component';
 import { ContactComponent } from './components/sections/contact/contact.component';
 import { TestComponent } from './components/test/test.component';
-import { CarruselComponent } from './components/carrusel/carrusel.component';
+import { CarouselComponent } from './components/carrusel/carousel.component';
 import { ArticleComponent } from './components/article/article.component';
+import { PageLoaderComponent } from './components/page-loader/page-loader.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +32,9 @@ import { ArticleComponent } from './components/article/article.component';
     ScheduleComponent,
     ContactComponent,
     TestComponent,
-    CarruselComponent,
+    CarouselComponent,
     ArticleComponent,
+    PageLoaderComponent,
   ],
   imports: [
     CommonModule,
@@ -43,15 +45,7 @@ import { ArticleComponent } from './components/article/article.component';
     HttpClientModule,
   ],
   bootstrap: [
-    AppComponent,
-    NavigationComponent,
-    AboutComponent,
-    ClassesComponent,
-    PricingComponent,
-    ServicesComponent,
-    ScheduleComponent,
-    ContactComponent,
-    TestComponent,
+    AppComponent
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
