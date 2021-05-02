@@ -1,0 +1,35 @@
+.article-wrapper {
+  padding: 62px 98px 140px;
+  display: flex;
+  .image-column {
+    width: 50%;
+    img{
+      width: 100%;
+    }
+  }
+  .spacer-column {
+    width: 75px;
+  }
+  .text-column {
+    width: 100%;
+  }
+  &.fl-r-reverse {
+    flex-flow: row-reverse;
+  }
+}
+
+// mobile only styles
+@media screen and (max-width: 900px) {
+  .article-wrapper {
+    flex-direction: column;
+    >*{
+      width: 100%;
+    }
+    .spacer-column {
+      height: 35px;
+    }
+    &.fl-r-reverse {
+      flex-flow: column-reverse;
+    }
+  }
+}
