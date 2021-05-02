@@ -18,12 +18,18 @@
   &.fl-r-reverse {
     flex-flow: row-reverse;
   }
+  &.fl-col {
+    flex-flow: column;
+    align-items: center;
+  }
 }
 
 // mobile only styles
 @media screen and (max-width: 900px) {
   .article-wrapper {
+    padding: 55px 45px 70px;
     flex-direction: column;
+    align-items: center;
     >*{
       width: 100%;
     }
