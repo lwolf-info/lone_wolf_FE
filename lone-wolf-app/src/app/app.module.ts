@@ -18,6 +18,7 @@ import { ScheduleComponent } from './components/sections/schedule/schedule.compo
 import { ContactComponent } from './components/sections/contact/contact.component';
 import { TestComponent } from './components/test/test.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
+import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
     ContactComponent,
     TestComponent,
     CarruselComponent,
+    ArticleComponent,
   ],
   imports: [
     CommonModule,

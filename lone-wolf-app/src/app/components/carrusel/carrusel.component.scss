@@ -1,0 +1,23 @@
+@import '../../../styles';
+::ng-deep{
+  .carousel {
+    .carousel-slide {
+      height: 666px !important;
+      padding: 0 !important;
+    }
+    >button {
+      background-color: $menu-selection20;
+      * {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  ::ng-deep{
+    .carousel .carousel-slide {
+      height: 350px !important;
+    }
+  }
+}

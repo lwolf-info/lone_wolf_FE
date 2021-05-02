@@ -5,6 +5,7 @@ $medium-lilac: #e2e0eb;
 $light-lilac: #ebeaf0;
 
 $menu-selection: #e1dfea;
+$menu-selection20: #e1dfea33;
 
 $dark-gray: #4a4b46;
 $medium-gray: #8f8f8f;
@@ -44,15 +45,6 @@ $font-size-xl: 22px;
   display: none;
 }
 
-@media screen and (min-width: 900px) {
-  .d-md-block{
-    display: block;
-  }
-  .d-md-none{
-    display: none;
-  }
-}
-
 /* Global reset */
 body{
   padding: 0;
@@ -60,4 +52,45 @@ body{
   font-family: $main-font;
   font-size: $font-size;
   font-weight: normal;
+}
+
+/* Global Styles */
+.ribbon{
+  background-color: $primary-lilac;
+  height: 100px;
+  padding: 0 100px;
+  display: flex;
+  > div {
+    margin: auto 0;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      position: absolute;
+      font-size: 68px;
+    }
+    p{
+      z-index: 1;
+      text-transform: capitalize;
+    }
+  }
+  .fa-circle{
+    color: $menu-selection;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ribbon{
+    height: 75px;
+    padding: 0 75px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .d-md-block{
+    display: block;
+  }
+  .d-md-none{
+    display: none;
+  }
 }

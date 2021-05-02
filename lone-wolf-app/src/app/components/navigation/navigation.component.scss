@@ -10,6 +10,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       .mat-tab-label-content {
         text-transform: capitalize;
         user-select: none;
@@ -35,7 +36,6 @@
 }
 
 // mobile only styles
-
 @media screen and (max-width: 900px) {
   .mobile-menu-trigger {
     background-color: $primary-lilac;
@@ -66,13 +66,14 @@
   }
   ::ng-deep{
     .mat-tab-nav-bar.mat-tab-header {
-      &.opened-menu {
-        height: 40%;
-      }
       position: absolute;
       height: 0;
       transition-duration: .8s;
       width: 100%;
+
+      &.opened-menu {
+        height: 40%;
+      }
 
       .mat-tab-list {
         height: auto;
