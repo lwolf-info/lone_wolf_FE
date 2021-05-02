@@ -1,4 +1,13 @@
-<nav mat-tab-nav-bar mat-align-tabs="center" animationDuration="2000ms" [disableRipple]="true">
+<div class="mobile-menu-trigger d-md-none">
+  <div class="open-menu" (click)="menuToggle()">
+    <div *ngIf="!isMenuOpen">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-circle"></i>
+    </div>
+    <div *ngIf="isMenuOpen"><i class="fas fa-times"></i></div>
+  </div>
+</div>
+<nav mat-tab-nav-bar mat-align-tabs="center" [class.opened-menu]="isMenuOpen" animationDuration="2000ms" [disableRipple]="true">
   <a mat-tab-link
      *ngFor="let link of navLinks"
      [routerLink]="link.link"

@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -15,10 +16,8 @@ import { PricingComponent } from './components/sections/pricing/pricing.componen
 import { ServicesComponent } from './components/sections/services/services.component';
 import { ScheduleComponent } from './components/sections/schedule/schedule.component';
 import { ContactComponent } from './components/sections/contact/contact.component';
-
-import { HttpClientModule } from '@angular/common/http';
 import { TestComponent } from './components/test/test.component';
-import { CommonModule } from '@angular/common';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +30,7 @@ import { CommonModule } from '@angular/common';
     ScheduleComponent,
     ContactComponent,
     TestComponent,
+    CarruselComponent,
   ],
   imports: [
     CommonModule,
@@ -38,7 +38,7 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   bootstrap: [
     AppComponent,

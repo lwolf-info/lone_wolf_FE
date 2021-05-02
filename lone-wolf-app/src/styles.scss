@@ -1,5 +1,6 @@
 /* Color pallet */
 $primary-lilac: #c5c1d8;
+$primary-lilac80: #c5c1d8CC;
 $medium-lilac: #e2e0eb;
 $light-lilac: #ebeaf0;
 
@@ -34,6 +35,22 @@ $font-size-xl: 22px;
 }
 .xl-text{
   font-size: $font-size-xl;
+}
+
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .d-md-block{
+    display: block;
+  }
+  .d-md-none{
+    display: none;
+  }
 }
 
 /* Global reset */
