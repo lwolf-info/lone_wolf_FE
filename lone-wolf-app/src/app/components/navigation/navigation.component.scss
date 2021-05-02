@@ -1,4 +1,5 @@
 @import '../../../styles';
+
 ::ng-deep{
   .mat-tab-header {
     .mat-tab-header-pagination {
@@ -37,33 +38,6 @@
 
 // mobile only styles
 @media screen and (max-width: 900px) {
-  .mobile-menu-trigger {
-    background-color: $primary-lilac;
-    justify-content: flex-end;
-    padding: 10px 24px;
-    display: flex;
-
-    .open-menu, div {
-      display: contents;
-      cursor: pointer;
-
-      .svg-inline--fa{
-        height: fit-content;
-        font-size: 68px;
-        margin: auto 0;
-        color: $dark-gray;
-        &.fa-bars{
-          transform: scaleY(1.2) scaleX(1.3);
-          margin-right: -30px;
-          font-size: 44px;
-          z-index: 1;
-        }
-        &.fa-circle{
-          color: $menu-selection;
-        }
-      }
-    }
-  }
   ::ng-deep{
     .mat-tab-nav-bar.mat-tab-header {
       position: absolute;
@@ -90,6 +64,34 @@
 
       .mat-ink-bar {
         display: none;
+      }
+    }
+  }
+
+  .mobile-menu-trigger {
+    background-color: $primary-lilac;
+    justify-content: flex-end;
+    padding: 10px 24px;
+    display: flex;
+
+    .open-menu, div {
+      display: contents;
+      cursor: pointer;
+
+      .svg-inline--fa{
+        height: fit-content;
+        font-size: 68px;
+        margin: auto 0;
+        color: $dark-gray;
+        &.fa-bars{
+          transform: scaleY(1.2) scaleX(1.3);
+          margin-right: -30px;
+          font-size: 44px;
+          z-index: 1;
+        }
+        &.fa-circle{
+          color: $menu-selection;
+        }
       }
     }
   }
