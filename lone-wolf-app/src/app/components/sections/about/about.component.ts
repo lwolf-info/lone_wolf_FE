@@ -12,8 +12,7 @@ export class AboutComponent implements OnInit {
   public baseURL = BASE_URL;
   public data: IAbout | undefined;
 
-  constructor(private api: ApiService) {
-  }
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
     this.api.getList<IAbout>('/about', []).subscribe((data: IAbout) => {

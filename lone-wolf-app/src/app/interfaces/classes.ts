@@ -1,14 +1,12 @@
 import { IImage } from './image';
+import { IInfoCard } from './info-card';
 import { Theme } from './theme';
 
 
-export interface IAbout {
+export interface IClasses {
   id: string;
   title: string;
-  direction: 'left' | 'right';
-  background: string;
   carousel: IImage[];
-  description: string;
-  image: IImage;
+  cards: IInfoCard[];
   theme: Theme;
 }

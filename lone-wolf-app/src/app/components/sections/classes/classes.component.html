@@ -1,1 +1,4 @@
-<app-carousel sectionName="Clases"></app-carousel>
+<div *ngIf="data">
+  <app-carousel [sectionName]="data.title" [images]="data.carousel"></app-carousel>
+</div>
+<app-page-loader *ngIf="!data"></app-page-loader>

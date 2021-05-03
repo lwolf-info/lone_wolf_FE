@@ -1,5 +1,5 @@
 <div *ngIf="data">
-  <app-carousel sectionName="Acerca de" [images]="data.carousel"></app-carousel>
+  <app-carousel [sectionName]="data.title" [images]="data.carousel"></app-carousel>
   <app-article [text]="data.description"
                [image]="baseURL + data.image.formats.thumbnail.url"
                [layout]="data.direction"></app-article>
