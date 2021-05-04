@@ -1,12 +1,11 @@
 @import '../../../styles';
 
-::ng-deep{
-  .carousel {
-    .carousel-slide {
+::ng-deep .carousel {
+  .carousel-slide {
       height: 666px !important;
       padding: 0 !important;
     }
-    >button {
+  >button {
       border-bottom: white 2px solid;
       border-right: white 2px solid;
       background: transparent;
@@ -24,13 +23,10 @@
         visibility: hidden;
       }
     }
-  }
 }
 
 @media screen and (max-width: 900px) {
-  ::ng-deep{
-    .carousel .carousel-slide {
-      height: 350px !important;
-    }
+  ::ng-deep .carousel .carousel-slide {
+    height: 350px !important;
   }
 }

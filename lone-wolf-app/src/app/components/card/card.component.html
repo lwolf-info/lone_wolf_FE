@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title><p class="headline-text">{{cardData.headline}}</p></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngIf="cardType===cardTypes.info" class="info-card-summary">
+      <p class="bold-text m-0">{{infoCardSummary.intensityLabel}}: {{cardData.intensity}}</p>
+      <p class="bold-text m-0">{{infoCardSummary.levelLabel}}: {{cardData.level}}</p>
+      <p class="bold-text m-0">{{infoCardSummary.durationLabel}}: {{cardData.duration}}</p>
+    </div>
+    <p>
+      {{cardData.description}}
+    </p>
+  </mat-card-content>
+</mat-card>

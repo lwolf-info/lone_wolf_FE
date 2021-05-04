@@ -9,6 +9,7 @@ import { BASE_URL } from '../../../common/common';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
+
   public baseURL = BASE_URL;
   public data: IAbout | undefined;
 

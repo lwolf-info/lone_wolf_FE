@@ -13,6 +13,7 @@ $light-gray: #9d9ca2;
 
 /* Fonts definition */
 $main-font: Verdana, Helvetica, sans-serif;
+$main-font-color: $dark-gray;
 $bold-amount: 800;
 $font-size-sm: 14px;
 $font-size: 16px;
@@ -24,6 +25,26 @@ $font-size-xl: 22px;
 $vertical-gutter: 35px;
 $horizontal-gutter: 75px;
 
+/* Global reset */
+
+html, body { height: 100%; }
+body{
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+  font-size: $font-size;
+  color: $main-font-color;
+  font-weight: normal;
+}
+
+/* Font styles */
+.headline-text {
+  font-weight: $bold-amount;
+  text-transform: uppercase;
+}
+.allcaps-text {
+  text-transform: uppercase;
+}
 .bold-text {
   font-weight: $bold-amount;
 }
@@ -42,23 +63,31 @@ $horizontal-gutter: 75px;
   font-size: $font-size-xl;
 }
 
+/* Mod Styles */
 .d-block {
   display: block;
 }
 .d-none {
   display: none;
 }
-
-/* Global reset */
-body{
-  padding: 0;
+.m-0 {
   margin: 0;
-  font-family: $main-font;
-  font-size: $font-size;
-  font-weight: normal;
+}
+
+@media screen and (min-width: 900px) {
+  .d-md-block{
+    display: block;
+  }
+  .d-md-none{
+    display: none;
+  }
 }
 
 /* Global Styles */
+.content-wrapper {
+  padding: 62px 98px 140px;
+}
+
 .ribbon{
   background-color: $primary-lilac;
   height: 100px;
@@ -76,7 +105,6 @@ body{
     }
     p{
       z-index: 1;
-      text-transform: capitalize;
     }
   }
   .fa-circle{
@@ -84,20 +112,36 @@ body{
   }
 }
 
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  app-card {
+    flex: 1 0 45%;
+    max-width: 45%;
+    min-height: 290px;
+    padding-bottom: 50px;
+    .mat-card {
+      height: 100%;
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
+  .content-wrapper {
+    padding: 55px 45px 70px;
+  }
+
   .ribbon{
     height: 75px;
     padding: 0 75px;
   }
-}
-@media screen and (min-width: 900px) {
-  .d-md-block{
-    display: block;
-  }
-  .d-md-none{
-    display: none;
-  }
-}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  .cards-grid {
+    flex-flow: column;
+    app-card {
+      flex: 1;
+      max-width: 100%;
+    }
+  }
+}

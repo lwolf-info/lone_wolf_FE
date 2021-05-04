@@ -1,4 +1,4 @@
-export interface IInfoCard {
+export interface IGenCard {
   headline: string;
   intensity: string;
   level: string;

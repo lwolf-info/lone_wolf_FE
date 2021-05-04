@@ -10,14 +10,13 @@ import { BASE_URL } from '../../common/common';
 })
 export class CarouselComponent implements OnInit {
 
-  public baseUrl = BASE_URL;
   @Input() sectionName = '';
   @Input() images: IImage[] = [];
 
-  constructor() {
-  }
+  public baseUrl = BASE_URL;
 
-  ngOnInit(): void {
-  }
+  constructor() { }
+
+  ngOnInit(): void { }
 
 }

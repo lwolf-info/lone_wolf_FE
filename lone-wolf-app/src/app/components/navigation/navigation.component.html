@@ -9,6 +9,7 @@
 </div>
 <nav mat-tab-nav-bar mat-align-tabs="center" [class.opened-menu]="isMenuOpen" animationDuration="2000ms" [disableRipple]="true">
   <a mat-tab-link
+     class="allcaps-text"
      *ngFor="let link of navLinks"
      [routerLink]="link.link"
      routerLinkActive #rla="routerLinkActive"

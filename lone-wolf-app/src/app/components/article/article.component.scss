@@ -1,7 +1,6 @@
 @import '../../../styles';
 
 .article-wrapper {
-  padding: 62px 98px 140px;
   display: flex;
   .image-column {
     width: 50%;
@@ -27,7 +26,6 @@
 // mobile only styles
 @media screen and (max-width: 900px) {
   .article-wrapper {
-    padding: 55px 45px 70px;
     flex-direction: column;
     align-items: center;
     >*{

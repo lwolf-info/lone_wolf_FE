@@ -1,4 +1,7 @@
 <div *ngIf="data">
   <app-carousel [sectionName]="data.title" [images]="data.carousel"></app-carousel>
+  <div class="content-wrapper cards-grid">
+    <app-card *ngFor="let card of data.cards" [cardType]="cardTypes.info" [cardData]="card"></app-card>
+  </div>
 </div>
 <app-page-loader *ngIf="!data"></app-page-loader>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-page-loader',
@@ -10,7 +9,6 @@ export class PageLoaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }

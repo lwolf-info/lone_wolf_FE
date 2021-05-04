@@ -17,9 +17,10 @@ import { ServicesComponent } from './components/sections/services/services.compo
 import { ScheduleComponent } from './components/sections/schedule/schedule.component';
 import { ContactComponent } from './components/sections/contact/contact.component';
 import { TestComponent } from './components/test/test.component';
-import { CarouselComponent } from './components/carrusel/carousel.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 import { ArticleComponent } from './components/article/article.component';
 import { PageLoaderComponent } from './components/page-loader/page-loader.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { PageLoaderComponent } from './components/page-loader/page-loader.compon
     CarouselComponent,
     ArticleComponent,
     PageLoaderComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
