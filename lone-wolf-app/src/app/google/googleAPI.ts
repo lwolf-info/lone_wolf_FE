@@ -8,6 +8,7 @@ let googleAPI: any = null;
  * docs:
  * https://console.cloud.google.com/apis/dashboard?hl=ES&project=lone-wolf-calendar-314115
  * https://developers.google.com/calendar/quickstart/js
+ * https://angular-calendar.com/#/kitchen-sink
  */
 
 @Injectable({
