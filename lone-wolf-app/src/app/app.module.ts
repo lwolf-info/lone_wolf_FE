@@ -21,6 +21,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ArticleComponent } from './components/article/article.component';
 import { PageLoaderComponent } from './components/page-loader/page-loader.component';
 import { CardComponent } from './components/card/card.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+
 
 @NgModule({
   declarations: [
@@ -45,6 +48,10 @@ import { CardComponent } from './components/card/card.component';
     MaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
   ],
   bootstrap: [
     AppComponent

@@ -1,0 +1,17 @@
+@import "./src/theme";
+
+.calendar-container {
+  padding: 10px 40px;
+}
+
+.calendar {
+  padding: 15px;
+  border: 4px solid $main-color;
+  position: relative;
+
+  h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+}
